@@ -15,7 +15,7 @@ htmlFiles.forEach(
     file => {
     const content = fs.readFileSync(path.join(Path_for_html, file), 'utf-8');
     //Выбираем подстроки подходяшие под условие регулярного выражения
-    const tags = content.match(/<p.*?>.*?</g);
+    const tags = content.match(/<p.*?>.*?<.p.*?/g);
 
     //Проходимся по подстрокам и проверем есть ли в них подстрока подходящая под наше условие
     let count = 0;

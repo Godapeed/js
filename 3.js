@@ -7,7 +7,7 @@ function fun(num) {
           return true; // 0 и 1 являются квадратами
         }
       
-        for (let i = 2; i <= Math.floor(num / 2); i++) {
+        for (let i = 2; i <= num; i++) {
           if (i * i === num) {
             return true; // Мы нашли корень, значит число является квадратом
           }
